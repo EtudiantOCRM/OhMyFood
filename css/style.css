@@ -1,3 +1,8 @@
+*{
+    box-sizing:border-box;
+
+}
+
 body{
 margin:0px;
 display:flex;
@@ -12,6 +17,11 @@ flex-direction: column;
 
 .city{
     text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    background-color: #eaeaea;
 }
 .Logo{
      text-align: center;
