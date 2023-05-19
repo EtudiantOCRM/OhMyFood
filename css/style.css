@@ -4,17 +4,19 @@
 }
 
 body{
+
 margin:0px;
 display:flex;
 justify-content:center;
 flex-direction: column;
+font-family:"roboto", sans-serif;
 
 }
 .tilleLogo{
     width:200px;
     height:34px;
 }
-
+/* section logo-paris-Belleville */
 .city{
     text-align: center;
     display:flex;
@@ -22,9 +24,35 @@ flex-direction: column;
     justify-content: center;
     gap: 17px;
     background-color: #eaeaea;
+    margin-top: 5px;
 }
 .Logo{
      text-align: center;
      margin-top:30px;
+     margin-bottom:30px;
  
+}
+/* section Explorer */
+
+.Explorer{
+    text-align: center;
+
+}
+.light{
+    font-weight:300;
+    font-size:18px;
+}
+h1{
+font-size: 40px;
+}
+.btn-violet-grad{
+    color:white;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 13px 18px;
+    border-radius: 25px;
+    border:none;
+    box-shadow: 0px 4px 10px 0px #00000040;
+    transition-duration: 0.25s;
+    background-image:linear-gradient(0deg,#9356dc,#FF79DA) ;
 }
