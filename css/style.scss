@@ -1,3 +1,8 @@
+@mixin btn-shadow{
+    box-shadow: 0px 4px 10px 0px #00000040;
+
+}
+
 *{
     box-sizing:border-box;
 
@@ -11,6 +16,9 @@ justify-content:center;
 flex-direction: column;
 font-family:"roboto", sans-serif;
 
+}
+main{
+    padding:0 10px;
 }
 .tilleLogo{
     width:200px;
@@ -52,7 +60,8 @@ font-size: 40px;
     padding: 13px 18px;
     border-radius: 25px;
     border:none;
-    box-shadow: 0px 4px 10px 0px #00000040;
+    // box-shadow: 0px 4px 10px 0px #00000040;
+    @include btn-shadow;
     margin-top: 18px;
     transition-duration: 0.25s;
     cursor:pointer;
@@ -62,4 +71,47 @@ font-size: 40px;
     transform: scale(1.1);
     opacity:0.9;
     box-shadow: 0px 4px 10px 0px #000000f7;
+}
+// section fonctionnement
+.Fonct{
+    margin-left:180px;
+    margin-right:180px;
+    & ol{
+       
+        list-style-type: none;
+        display:flex;
+        gap: 36px;
+        @media (max-width: 768px){
+            flex-direction: column;
+        }   
+    }
+    & li{
+        background-color: #f6f6f6;
+        padding:20px 20px;
+        flex-grow: 1;
+        border-radius:15px;
+        width:322px;
+        height: 72px;
+        align-content: center;
+        display: flex;
+        @include btn-shadow;
+        &:hover{
+            transform: scale(1.02);
+        }
+        & .color-icon{
+            color: #7e7e7e;
+            margin-right:20px;
+        }
+    & .numeration{
+        background-color: #9356DC;
+        color:white;
+        display:grid;
+        width:24px;
+        height: 24px;
+        place-items: center;
+        border-radius: 50px;
+        position:relative;
+        left:-30px;
+    }   
+    }
 }

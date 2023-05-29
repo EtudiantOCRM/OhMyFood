@@ -10,6 +10,10 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+main {
+  padding: 0 10px;
+}
+
 .tilleLogo {
   width: 200px;
   height: 34px;
@@ -64,6 +68,50 @@ h1 {
   transform: scale(1.1);
   opacity: 0.9;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.968627451);
+}
+
+.Fonct {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+.Fonct ol {
+  list-style-type: none;
+  display: flex;
+  gap: 36px;
+}
+@media (max-width: 768px) {
+  .Fonct ol {
+    flex-direction: column;
+  }
+}
+.Fonct li {
+  background-color: #f6f6f6;
+  padding: 20px 20px;
+  flex-grow: 1;
+  border-radius: 15px;
+  width: 322px;
+  height: 72px;
+  align-content: center;
+  display: flex;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.Fonct li:hover {
+  transform: scale(1.02);
+}
+.Fonct li .color-icon {
+  color: #7e7e7e;
+  margin-right: 20px;
+}
+.Fonct li .numeration {
+  background-color: #9356DC;
+  color: white;
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 50px;
+  position: relative;
+  left: -30px;
 }
 
 /*# sourceMappingURL=style.css.map */
