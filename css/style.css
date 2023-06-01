@@ -10,16 +10,11 @@ body {
   font-family: "roboto", sans-serif;
 }
 
-main {
-  padding: 0 10px;
-}
-
 .tilleLogo {
   width: 200px;
   height: 34px;
 }
 
-/* section logo-paris-Belleville */
 .city {
   text-align: center;
   display: flex;
@@ -27,7 +22,7 @@ main {
   justify-content: center;
   gap: 17px;
   background-color: #eaeaea;
-  margin-top: 5px;
+  height: 50px;
 }
 
 .Logo {
@@ -39,6 +34,11 @@ main {
 /* section Explorer */
 .Explorer {
   text-align: center;
+  background-color: #F6F6F6;
+  height: 270px;
+  width: 1440px;
+  margin: auto;
+  padding-top: 1px;
 }
 
 .light {
@@ -71,8 +71,8 @@ h1 {
 }
 
 .Fonct {
-  margin-left: 180px;
-  margin-right: 180px;
+  padding-left: 125px;
+  padding-right: 150px;
 }
 .Fonct ol {
   list-style-type: none;
@@ -112,6 +112,49 @@ h1 {
   border-radius: 50px;
   position: relative;
   left: -30px;
+}
+
+h2 {
+  padding: 30px 0;
+  margin: 0;
+}
+
+.menus {
+  background-color: #f6f6f6;
+  padding-left: 125px;
+  padding-right: 150px;
+}
+.menus .menus_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 91px;
+}
+@media (max-width: 768px) {
+  .menus .menus_cards {
+    grid-template-columns: 1fr;
+  }
+}
+.menus .menus_cards .card {
+  height: 251px;
+}
+.menus .menus_cards .card_image {
+  border-radius: 15px;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.menus .menus_cards .card_new {
+  position: relative;
+  height: 29px;
+  width: 80px;
+  background-color: #99E2D0;
+  display: inline-block;
+  top: -251px;
+  right: -430px;
+  margin-top: 3px;
+  padding: 4px 6px;
+  color: #008766;
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
