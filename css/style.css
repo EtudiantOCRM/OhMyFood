@@ -10,7 +10,7 @@ body {
   font-family: "roboto", sans-serif;
 }
 
-.tilleLogo {
+.tailleLogo {
   width: 200px;
   height: 34px;
 }
@@ -119,10 +119,21 @@ h2 {
   margin: 0;
 }
 
+h3, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .menus {
   background-color: #f6f6f6;
   padding-left: 125px;
   padding-right: 150px;
+  margin-top: 50px;
+  height: 777px;
 }
 .menus .menus_cards {
   display: grid;
@@ -136,25 +147,52 @@ h2 {
 }
 .menus .menus_cards .card {
   height: 251px;
+  position: relative;
 }
 .menus .menus_cards .card_image {
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   background-size: cover;
   height: 100%;
   width: 100%;
 }
 .menus .menus_cards .card_new {
-  position: relative;
-  height: 29px;
-  width: 80px;
+  position: absolute;
+  height: 12%;
+  width: 22%;
   background-color: #99E2D0;
-  display: inline-block;
-  top: -251px;
-  right: -430px;
-  margin-top: 3px;
-  padding: 4px 6px;
+  display: grid;
+  top: 10px;
+  right: 42px;
+  place-items: center;
   color: #008766;
   border-radius: 2px;
+}
+.menus .menus_cards .card_description {
+  position: relative;
+}
+.menus .menus_cards .card_description h3, .menus .menus_cards .card_description p {
+  margin: 5px;
+}
+.menus .menus_cards .card_description h3 {
+  padding-top: 5px;
+}
+.menus .menus_cards .card_description .i {
+  font-size: 25px;
+  position: absolute;
+  right: 25px;
+  top: 15px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  display: flex;
+  gap: 7px;
+}
+footer h2 {
+  font-family: "shrikhand", "italic";
+  padding: 0;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

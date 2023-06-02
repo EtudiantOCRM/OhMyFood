@@ -22,7 +22,7 @@ font-family:"roboto", sans-serif;
 
 }
 
-.tilleLogo{
+.tailleLogo{
     width:200px;
     height:34px;
 }
@@ -129,11 +129,21 @@ h2{
     padding:30px 0 ;
     margin:0;
 }
+h3, p{
+   margin:0;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
 
 .menus{
     
     background-color: #f6f6f6;
     @include marge-section;
+    margin-top:50px;
+    height:777px;
+    
     
 .menus_cards{
     display:grid;
@@ -147,9 +157,10 @@ h2{
     .card{
         
         height: 251px;
+        position:relative;
         
         &_image{
-            border-radius:15px ;
+            border-radius:15px 15px  0 0;
             background-size:cover;
             height: 100%;
             width: 100%;
@@ -158,20 +169,52 @@ h2{
             
         } 
         &_new{    
-            position: relative;
-            height: 29px;
-            width: 80px;
+            position: absolute;
+            height: 12%;
+            width: 22%;
             background-color:#99E2D0;
-            display:inline-block;
-            top:-251px;
-            right:-430px;
-            margin-top: 3px;
-            padding: 4px 6px;
+            display:grid;
+            top: 10px;
+            right:42px;
+            place-items: center;
+            
             color:#008766;
             border-radius:2px;
     
-        }        
+        } 
+        &_description{
+            position:relative;
+            h3, p{
+                margin:5px;
+                
+            }
+            h3{
+                padding-top:5px;
+            }
+            .i{
+                font-size:25px;
+                position:absolute;
+                right: 25px;
+                top:15px;
+            }
+        }       
     }
         
   } 
+}
+// Footer
+footer{
+    background-color:#353535;
+    color:white;
+    display:flex;
+    gap: 7px;
+    
+   h2{
+    font-family:"shrikhand", "italic";
+    padding:0;
+    margin:0;
+
+   }
+        
+    
 }
