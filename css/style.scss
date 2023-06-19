@@ -21,6 +21,11 @@ flex-direction: column;
 font-family:"roboto", sans-serif;
 
 }
+.container{
+    max-width:1300px;
+    margin:auto;
+    position: relative;
+}
 
 .tailleLogo{
     width:200px;
@@ -49,7 +54,7 @@ font-family:"roboto", sans-serif;
     background-color: #F6F6F6;
     
     height: 270px;
-    width: 1440px;
+    
     margin:auto;
     padding-top: 1px;
 
@@ -61,6 +66,10 @@ font-family:"roboto", sans-serif;
 }
 h1{
 font-size: 40px;
+@media (max-width: $max-width-mobil){
+    font-size:24px;
+    
+}
 }
 .btn-violet-grad{
     color:white;
@@ -84,21 +93,31 @@ font-size: 40px;
 // section fonctionnement
 .Fonct{
     @include marge-section;
+    
+    @media (max-width: $max-width-mobil){
+        padding-left:25px;
+        padding-right: 25px;
+    }
     & ol{
        
         list-style-type: none;
         display:flex;
         gap: 36px;
-        @media (max-width: $max-width-mobil){
+        
+            
+        @media(max-width:1202px){
             flex-direction: column;
-        }   
+            padding:0px;
+            align-items: center;
+        }
+          
     }
     & li{
         background-color: #f6f6f6;
         padding:20px 20px;
         flex-grow: 1;
         border-radius:15px;
-        width:322px;
+        width:100%;
         height: 72px;
         align-content: center;
         display: flex;
@@ -142,15 +161,22 @@ a{
     background-color: #f6f6f6;
     @include marge-section;
     margin-top:50px;
-    height:777px;
+    height:800px;
+    @media(max-width:1202px){
+        height: 1500px;
+        padding-left:25px;
+        padding-right: 25px;
+    }
     
     
 .menus_cards{
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap:91px;
-    @media(max-width:$max-width-mobil){
+    width:100%;
+    @media(max-width:1202px){
     grid-template-columns: 1fr;
+    
         }
         
     
@@ -164,6 +190,7 @@ a{
             background-size:cover;
             height: 100%;
             width: 100%;
+            object-fit:cover;
             
             
             
@@ -171,7 +198,7 @@ a{
         &_new{    
             position: absolute;
             height: 12%;
-            width: 22%;
+            width: 80px;
             background-color:#99E2D0;
             display:grid;
             top: 10px;
@@ -184,37 +211,109 @@ a{
         } 
         &_description{
             position:relative;
+            background-color: white;
+            margin-top:-9px;
+            border-radius:0 0 15px 15px;
+            height: 77px;
             h3, p{
-                margin:5px;
+                padding-top:13px;
+                margin-left:18px;
                 
+            }
+            p{
+                padding-top:5px;
             }
             h3{
                 padding-top:5px;
             }
-            .i{
+            // i{
+            //     position:absolute;
+            // }
+            .coeurVide{
                 font-size:25px;
                 position:absolute;
                 right: 25px;
                 top:15px;
             }
-        }       
-    }
+            .coeurPlein{
+                color: transparant;
+                background-image:linear-gradient(0deg,#9356dc,#FF79DA);
+                opacity:0;     
+        }
+           
+        &:hover
+    .coeurPlein{
+        opacity: 1;
+          } 
+        } 
         
+   
+      
+    } 
+    
   } 
+  
 }
 // Footer
 footer{
     background-color:#353535;
     color:white;
     display:flex;
-    gap: 7px;
+    gap: 10px;
+    height: 114px;
     
-   h2{
-    font-family:"shrikhand", "italic";
+    @media(max-width:768px) {
+        padding-left:0;
+        height: 186px;
+
+    }
+
+    h2{
+    font-family: 'Manrope', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
     padding:0;
     margin:0;
+    font-size: 18px;
 
    }
+div{
+   
+    margin-top: 40px;
+    gap:15px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 120px;
+    @media(max-width:768px){
+    flex-direction: column;
+    margin-left:0;
+    margin-top:15px;
+    gap:7px; 
+    align-items: normal;
+    padding-left:10px;
+    }
+}
+.marge{
+    margin-left: 35px;
+    @media(max-width:768px){
+        margin-left:0px;
+    }
+
+}
+    .footer_image{
+        width:137px;
+        height: 27px;
+        filter:invert(100%);
+        margin-left: 25px;
+        @media(max-width:768px){
+            margin-left:0px;
+        } 
         
+    }  
+
     
 }
