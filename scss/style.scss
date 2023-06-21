@@ -232,28 +232,24 @@ a{
                 position:absolute;
                 right: 25px;
                 top:15px;
-            }
+
             .coeurPlein{
-                font-size:25px;
-                position:absolute;
-                right: 25px;
-                top:15px;
                 color: transparant;
                 background-image:linear-gradient(0deg,#9356dc,#FF79DA);
                 background-clip: text;
                 -webkit-background-clip: text;
-                opacity:0;     
+                opacity:0;  
+            }
+               
             }
            
-       
+            &:hover
+            .coeurPlein{
+                opacity: 1;
           } 
-          &:hover
-          .coeurPlein{
-              opacity: 1;
-        } 
+          } 
+         
         
-   
-      
     } 
     
   } 
