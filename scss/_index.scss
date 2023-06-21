@@ -1,0 +1,314 @@
+
+
+
+*{
+    box-sizing:border-box;
+
+}
+
+body{
+
+margin:0px;
+display:flex;
+justify-content:center;
+flex-direction: column;
+font-family:"roboto", sans-serif;
+
+}
+.container{
+    max-width:1300px;
+    margin:auto;
+    position: relative;
+}
+
+.tailleLogo{
+    width:200px;
+    height:34px;
+}
+// section logo-paris-Belleville 
+.city{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    background-color: #eaeaea;
+    height: 50px;
+}
+.Logo{
+     text-align: center;
+     margin-top:30px;
+     margin-bottom:30px;
+ 
+}
+/* section Explorer */
+
+.Explorer{
+    text-align: center;
+    background-color: #F6F6F6;
+    
+    height: 270px;
+    
+    margin:auto;
+    padding-top: 1px;
+
+
+}
+.light{
+    font-weight:300;
+    font-size:18px;
+}
+h1{
+font-size: 40px;
+@media (max-width: $max-width-mobil){
+    font-size:24px;
+    
+}
+}
+.btn-violet-grad{
+    color:white;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 13px 18px;
+    border-radius: 25px;
+    border:none;
+    // box-shadow: 0px 4px 10px 0px #00000040;
+    @include btn-shadow;
+    margin-top: 18px;
+    transition-duration: 0.25s;
+    cursor:pointer;
+    background-image:linear-gradient(0deg,#9356dc,#FF79DA) ;
+}
+.btn-violet-grad:hover{
+    transform: scale(1.1);
+    opacity:0.9;
+    box-shadow: 0px 4px 10px 0px #000000f7;
+}
+// section fonctionnement
+.Fonct{
+    @include marge-section;
+    
+    @media (max-width: $max-width-mobil){
+        padding-left:25px;
+        padding-right: 25px;
+    }
+    & ol{
+       
+        list-style-type: none;
+        display:flex;
+        gap: 36px;
+        
+            
+        @media(max-width:1202px){
+            flex-direction: column;
+            padding:0px;
+            align-items: center;
+        }
+          
+    }
+    & li{
+        background-color: #f6f6f6;
+        padding:20px 20px;
+        flex-grow: 1;
+        border-radius:15px;
+        width:100%;
+        height: 72px;
+        align-content: center;
+        display: flex;
+        @include btn-shadow;
+        &:hover{
+            transform: scale(1.02);
+        }
+        & .color-icon{
+            color: #7e7e7e;
+            margin-right:20px;
+        }
+    & .numeration{
+        background-color: #9356DC;
+        color:white;
+        display:grid;
+        width:24px;
+        height: 24px;
+        place-items: center;
+        border-radius: 50px;
+        position:relative;
+        left:-30px;
+    }   
+ }
+}
+
+// Section Restaurant
+h2{
+    padding:30px 0 ;
+    margin:0;
+}
+h3, p{
+   margin:0;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.menus{
+    
+    background-color: #f6f6f6;
+    @include marge-section;
+    margin-top:50px;
+    height:800px;
+    @media(max-width:1202px){
+        height: 1500px;
+        padding-left:25px;
+        padding-right: 25px;
+    }
+    
+    
+.menus_cards{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:91px;
+    width:100%;
+    @media(max-width:1202px){
+    grid-template-columns: 1fr;
+    
+        }
+        
+    
+    .card{
+        
+        height: 251px;
+        position:relative;
+        
+        &_image{
+            border-radius:15px 15px  0 0;
+            background-size:cover;
+            height: 100%;
+            width: 100%;
+            object-fit:cover;
+            
+            
+            
+        } 
+        &_new{    
+            position: absolute;
+            height: 12%;
+            width: 80px;
+            background-color:#99E2D0;
+            display:grid;
+            top: 10px;
+            right:42px;
+            place-items: center;
+            
+            color:#008766;
+            border-radius:2px;
+    
+        } 
+        &_description{
+            position:relative;
+            background-color: white;
+            margin-top:-9px;
+            border-radius:0 0 15px 15px;
+            height: 77px;
+            h3, p{
+                padding-top:13px;
+                margin-left:18px;
+                
+            }
+            p{
+                padding-top:5px;
+            }
+            h3{
+                padding-top:5px;
+            }
+            
+            .coeurVide{
+                font-size:25px;
+                position:absolute;
+                right: 25px;
+                top:15px;
+
+            .coeurPlein{
+                color: transparant;
+                background-image:linear-gradient(0deg,#9356dc,#FF79DA);
+                background-clip: text;
+                -webkit-background-clip: text;
+                opacity:0;  
+            }
+               
+            }
+           
+            &:hover
+            .coeurPlein{
+                opacity: 1;
+          } 
+          } 
+         
+        
+    } 
+    
+  } 
+  
+}
+// Footer
+footer{
+    background-color:#353535;
+    color:white;
+    display:flex;
+    gap: 10px;
+    height: 114px;
+    
+    @media(max-width:768px) {
+        padding-left:0;
+        height: 186px;
+
+    }
+
+    h2{
+    font-family: 'Manrope', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    margin:0;
+    font-size: 18px;
+
+   }
+div{
+   
+    margin-top: 40px;
+    gap:15px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 120px;
+    @media(max-width:768px){
+    flex-direction: column;
+    margin-left:0;
+    margin-top:15px;
+    gap:7px; 
+    align-items: normal;
+    padding-left:10px;
+    }
+}
+.marge{
+    margin-left: 35px;
+    @media(max-width:768px){
+        margin-left:0px;
+    }
+
+}
+    .footer_image{
+        width:137px;
+        height: 27px;
+        filter:invert(100%);
+        margin-left: 25px;
+        @media(max-width:768px){
+            margin-left:0px;
+        } 
+        
+    }  
+
+    
+}
