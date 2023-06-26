@@ -230,27 +230,35 @@ a{
             .card_description-heart{
                 position:relative;
                 
+                font-size: 18px;
+                border-radius: 15px;
+                padding:15px 13px;
             }
             .coeurVide{
-                font-size:25px;
+                font: size 20px;
                 position: absolute;
-                top:0;
+                right: 20px;
+                top:25;
                 margin-top:6px;
             }
             .coeurPlein{
-                font-size: 25px;
-                margin-top: 6px;
-                color: transparent;
-                background-image:linear-gradient(0deg,#9356dc,#FF79DA);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                font-size: 20px;
+                // margin-top: 6px;
+                // color: transparent;
+                // background-image:linear-gradient(0deg,#9356dc,#FF79DA);
+                // background-clip: text;
+                // -webkit-background-clip: text;
+                // -webkit-text-fill-color: transparent;
                 opacity:0; 
-                 
+                 transition: all 400ms;
             }  
             &:hover
             .coeurPlein{
                 opacity: 1;
+                color:transparent;
+                background-image: linear-gradient(0deg,#9456DC, #FF79DB);
+                background-clip: text;
+                -webkit-background-clip: text;
               
     } 
 }   
@@ -297,10 +305,7 @@ a{
     position: relative;
     margin-right: 120px;
 
-    }
-    
-    
-        
+    }    
     }
 
     .marge{
@@ -318,7 +323,6 @@ a{
         margin-left:0px;
         @media(min-width:1203px){
             margin-left:25px;
-        }
-         
+        }    
     }  
 }

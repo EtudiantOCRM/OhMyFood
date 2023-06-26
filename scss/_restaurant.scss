@@ -2,3 +2,66 @@
 .card_image1{
     max-width: 100%;
 }
+
+
+// Footer
+.footerSize{
+    background-color:#353535;
+    color:white;
+    display:flex;
+    gap: 10px;
+    height: 114px;
+    padding-left:0;
+    height: 186px;
+
+    
+
+    h2{
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    margin:0;
+    font-size: 18px;
+    }
+
+.footerInf{
+
+    flex-direction: column;
+    margin-left:0;
+    margin-top:15px;
+    gap:7px; 
+    align-items: normal;
+    padding-left:10px;
+    
+    @media(min-width:1203px){
+     margin-top: 40px;
+     gap:15px;
+     margin-left: auto;
+     display: flex;
+     flex-direction:row;
+     align-items: center;
+    position: relative;
+    margin-right: 120px;
+
+    }    
+    }
+
+    .marge{
+    margin-left: 35px;
+    
+        margin-left:0px;
+        
+    }
+
+    .footer_image{
+        width:137px;
+        height: 27px;
+        filter:invert(100%);
+        
+        margin-left:0px;
+        @media(min-width:1203px){
+            margin-left:25px;
+        }    
+    }  
+}
