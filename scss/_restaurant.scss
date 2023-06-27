@@ -1,8 +1,60 @@
 // La Palette du gout
 .card_image1{
     max-width: 100%;
+    object-fit:cover;
+    position:relative;
 }
+.menu1{
+    font-family:"Shrikhand", "sans-serif";
+    font
+    .sectionMenus{
+        background-color: white;
+        margin-top: -45px;
+        border-radius: 40px 40px 0 0;
+        position:relative; 
 
+
+    }
+    .card_description-heart{
+        position:relative;
+        
+        font-size: 18px;
+        border-radius: 15px;
+        padding:15px 13px;
+    }
+    .coeurVide{
+        font-size: 25px;
+        position: absolute;
+        right: 20px;
+        top:5px;
+        // margin-top:6px;
+    }
+    .coeurPlein{
+        font-size: 25px;
+        position: absolute;
+        right: 20px;
+        top:5px;
+        
+        // margin-top: 6px;
+         color: transparent;
+         background-image:linear-gradient(0deg,#9356dc,#FF79DA);
+        //  background-clip: image;
+        // -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+        opacity:0; 
+         transition: all 400ms;
+    }  
+    &:hover
+    .coeurPlein{
+        opacity: 1;
+        
+        background-image: linear-gradient(0deg,#9456DC, #FF79DB);
+        background-clip: text;
+        -webkit-background-clip: text;
+      
+    } 
+    
+        }
 
 // Footer
 .footerSize{
@@ -10,9 +62,10 @@
     color:white;
     display:flex;
     gap: 10px;
-    height: 114px;
-    padding-left:0;
+    // height: 114px;
+    padding-left:10px;
     height: 186px;
+    line-height: 1.5;
 
     
 
@@ -58,7 +111,8 @@
         width:137px;
         height: 27px;
         filter:invert(100%);
-        
+        margin-top:22px;
+        margin-bottom:10px;
         margin-left:0px;
         @media(min-width:1203px){
             margin-left:25px;
