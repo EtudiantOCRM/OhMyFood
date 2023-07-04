@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@100;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/3c6fd09c86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/page1.css">
 
@@ -24,36 +26,62 @@
     <header class="Logo">
         <img class="tailleLogo" src="images/logo/ohmyfood.png" alt="Logo du site">
     </header>
-    <main>
-        <img  class="card_image1" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="menu-1">
-        <div class="sectionMunus">
+    <img  class="card_image1" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="menu-1">
+    <main class="menu">
+        
+        <section class="sectionMunus">
         <h2 class="menu1">La palette du gout</h2>
-        </div>
+        <div class="card_description-heart">
+            <i class="coeur fa-regular fa-heart "></i>
+            </div>
+        </section>
+        <!-- section des differents plats -->
+        <section class="Plats">
+            <p>Entrées</p>
+            <div class="Plats-groupe">
+            <div class="menu-items">
 
+                <h3 class="margin0">Fricassée d'escargots</h3>
+                <div class="menu-prix">
+                    <p class="margin0">Au piment d'Espelette</p>
+                    <p class="prix">25€</p>
+                    <div class="menu-items_check">check</div>
+                </div>
+                
+            </div>    
+
+            </div>
+            <div class="Plats-groupe">Plats</div>
+            <div class="Plats-groupe">Desserts</div>
+
+        </section>
+        
 
 
     </main>
     <!-- Footer -->
-<footer class="footerSize">
-    <div>
-        <img class="footer_image" src="images/logo/ohmyfood.png" alt="logo-footer">
-
-    <p>
-        <i class="fas fa-utensils"></i>
-        Proposer un restaurant
-    </p>
-    <p>
-        <i class="fas fa-hands-helping"></i>
-        Devenir partenaire
-    </p>
-    <p class="marge">
-        
-        Mentions légales
-    </p>
-    <p>
-       <a href="mailto:restaurant.ohmyfood@gmail.com" >Contact</a>
-    </p>
-    </div>
-</footer>
+    <footer class="footerSize">
+        <div class=" reverse">
+            <img class="footer_image" src="images/logo/ohmyfood.png" alt="logo-footer">
+            <div class="footerInf">
+                <div>
+                    <i class="fas fa-utensils"></i>
+                    Proposer un restaurant
+                </div>
+                <div>
+                    <i class="fas fa-hands-helping"></i>
+                    Devenir partenaire
+                </div>
+                <div class="marge">
+                    Mentions légales
+                </div>
+                <div>
+                    <a class="contactFooter" href="mailto:restaurant.ohmyfood@gmail.com">Contact</a>
+                </div>
+            </div>
+            
+       
+        </div>
+    </footer>
 </body>
 </html>

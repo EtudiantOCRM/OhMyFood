@@ -61,7 +61,7 @@ font-family:"roboto", sans-serif;
 .sizeTitle{
     font-size:24px;
     @media all and (min-width: 1203px) and (max-width: 2000px){
-font-size: 40px;
+    font-size: 40px;
     }
     
     
@@ -135,19 +135,20 @@ font-size: 40px;
         border-radius: 50px;
         position:relative;
         left:-30px;
-    }   
- }
+        }   
+    }
 }
 
 // Section Restaurant
-h2{
+.title-h2{
     padding:30px 0 ;
     margin:0;
 }
-h3, p{
+.card_description-menuNom, 
+.card_description-ville{
    margin:0;
 }
-a{
+.card{
     text-decoration:none;
     color:inherit;
 }
@@ -172,12 +173,9 @@ a{
     width:100%;
     @media(max-width:1202px){
     grid-template-columns: 1fr;
-    
         }
         
-    
     .card{
-        
         height: 251px;
         position:relative;
         
@@ -186,10 +184,7 @@ a{
             background-size:cover;
             height: 100%;
             width: 100%;
-            object-fit:cover;
-            
-            
-            
+            object-fit:cover;  
         } 
         &_new{    
             position: absolute;
@@ -200,10 +195,8 @@ a{
             top: 10px;
             right:42px;
             place-items: center;
-            
             color:#008766;
             border-radius:2px;
-    
         } 
         &_description{
             position:relative;
@@ -229,42 +222,26 @@ a{
             }
             .card_description-heart{
                 position:relative;
-                
                 font-size: 18px;
                 border-radius: 15px;
                 padding:15px 13px;
             }
-            .coeurVide{
+            .coeur{
                 font-size: 25px;
                 position: absolute;
                 right: 20px;
                 top:5px;
                 // margin-top:6px;
+                &:hover{
+                    font-weight:900;
+                    background:linear-gradient(360deg,#ff79da,#9356dc);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition-duration:800ms;
+                }
             }
-            .coeurPlein{
-                font-size: 25px;
-                position: absolute;
-                right: 20px;
-                top:5px;
-                
-                // margin-top: 6px;
-                 color: transparent;
-                 background-image:linear-gradient(0deg,#9356dc,#FF79DA);
-                //  background-clip: image;
-                // -webkit-background-clip: text;
-                 -webkit-text-fill-color: transparent;
-                opacity:0; 
-                 transition: all 400ms;
-            }  
-            &:hover
-            .coeurPlein{
-                opacity: 1;
-                
-                background-image: linear-gradient(0deg,#9456DC, #FF79DB);
-                background-clip: text;
-                -webkit-background-clip: text;
-              
-            } 
+            
 }   
         } 
     }  
@@ -281,55 +258,70 @@ a{
 
     
 
-    h2{
-    font-family: 'Manrope', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    padding:0;
-    margin:0;
-    font-size: 18px;
+    // h2{
+    // font-family: 'Manrope', sans-serif;
+    // font-family: 'Montserrat', sans-serif;
+    // font-family: 'Roboto', sans-serif;
+    // padding:0;
+    // margin:0;
+    // font-size: 18px;
+    // }
+
+    .reverse{
+        padding:22px 25px;
+        @media(min-width: 1203px){
+            display:flex;
+            flex-direction:row-reverse;
+            justify-content:flex-end;
+            align-items:center;
+            width:100%;
+        }
     }
-
 .footerInf{
-
+    text-decoration: none;
+    color:white;
     flex-direction: column;
-    margin-left:0;
-    margin-top:15px;
     gap:7px; 
     align-items: normal;
-    padding-left:10px;
     line-height: 1.5;
     
     @media(min-width:1203px){
-     margin-top: 40px;
-     gap:15px;
-     margin-left: auto;
-     display: flex;
-     flex-direction:row;
-     align-items: center;
+    //  margin-top: 40px;
+    margin-top: 0;
+    gap:15px;
+    margin-left: auto;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
     position: relative;
     margin-right: 120px;
-
     }    
     }
 
+    .reverse{
+        @media(min-width:1203px){
+            flex-direction:row-reverse;
+        }
+    }
+
     .marge{
-    margin-left: 35px;
-    
+        margin-left: 35px;
         margin-left:0px;
-        
     }
 
     .footer_image{
         width:137px;
         height: 27px;
         filter:invert(100%);
-        
         margin-left:0px;
         margin-top:5px;
         margin-bottom:5px;
         @media(min-width:1203px){
             margin-left:25px;
         }    
-    }  
+    } 
+    .contactFooter{
+        text-decoration: none;
+        color:white;
+    } 
 }

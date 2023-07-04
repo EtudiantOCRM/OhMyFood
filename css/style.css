@@ -127,16 +127,17 @@ body {
   left: -30px;
 }
 
-h2 {
+.title-h2 {
   padding: 30px 0;
   margin: 0;
 }
 
-h3, p {
+.card_description-menuNom,
+.card_description-ville {
   margin: 0;
 }
 
-a {
+.card {
   text-decoration: none;
   color: inherit;
 }
@@ -216,28 +217,19 @@ a {
   border-radius: 15px;
   padding: 15px 13px;
 }
-.menus .menus_cards .card_description .coeurVide {
+.menus .menus_cards .card_description .coeur {
   font-size: 25px;
   position: absolute;
   right: 20px;
   top: 5px;
 }
-.menus .menus_cards .card_description .coeurPlein {
-  font-size: 25px;
-  position: absolute;
-  right: 20px;
-  top: 5px;
-  color: transparent;
-  background-image: linear-gradient(0deg, #9356dc, #FF79DA);
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-  transition: all 400ms;
-}
-.menus .menus_cards .card_description:hover .coeurPlein {
-  opacity: 1;
-  background-image: linear-gradient(0deg, #9456DC, #FF79DB);
+.menus .menus_cards .card_description .coeur:hover {
+  font-weight: 900;
+  background: linear-gradient(360deg, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-duration: 800ms;
 }
 
 .footerSize {
@@ -249,26 +241,29 @@ a {
   padding-left: 0;
   height: 186px;
 }
-.footerSize h2 {
-  font-family: "Manrope", sans-serif;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Roboto", sans-serif;
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
+.footerSize .reverse {
+  padding: 22px 25px;
+}
+@media (min-width: 1203px) {
+  .footerSize .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
 }
 .footerSize .footerInf {
+  text-decoration: none;
+  color: white;
   flex-direction: column;
-  margin-left: 0;
-  margin-top: 15px;
   gap: 7px;
   align-items: normal;
-  padding-left: 10px;
   line-height: 1.5;
 }
 @media (min-width: 1203px) {
   .footerSize .footerInf {
-    margin-top: 40px;
+    margin-top: 0;
     gap: 15px;
     margin-left: auto;
     display: flex;
@@ -276,6 +271,11 @@ a {
     align-items: center;
     position: relative;
     margin-right: 120px;
+  }
+}
+@media (min-width: 1203px) {
+  .footerSize .reverse {
+    flex-direction: row-reverse;
   }
 }
 .footerSize .marge {
@@ -295,50 +295,95 @@ a {
     margin-left: 25px;
   }
 }
+.footerSize .contactFooter {
+  text-decoration: none;
+  color: white;
+}
+
+.Logo {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 .card_image1 {
-  max-width: 100%;
+  width: 100%;
+  height: 275px;
   object-fit: cover;
+}
+
+.menu {
+  margin-top: -40px;
+  border-radius: 20px 20px 0 0;
+  background-color: #f6f6f6;
   position: relative;
 }
 
 .menu1 {
   font-family: "Shrikhand", "sans-serif";
+  padding-left: 10px;
 }
-.menu1 font .sectionMenus {
+
+.sectionMunus {
+  position: relative;
+}
+
+.Plats {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  gap: 10px;
+}
+
+.Plats-groupe {
   background-color: white;
-  margin-top: -45px;
-  border-radius: 40px 40px 0 0;
-  position: relative;
+  border-radius: 20px;
+  margin-right: 20px;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
-.menu1 .card_description-heart {
-  position: relative;
-  font-size: 18px;
-  border-radius: 15px;
-  padding: 15px 13px;
+
+.menu-items {
+  margin: 10px;
 }
-.menu1 .coeurVide {
+.menu-items .menu-items_check {
+  background-color: #99E2D0;
+  display: flex;
+  margin-left: 5px;
+  align-items: center;
+  width: 53px;
+}
+.menu-items .menu-items_check hover {
+  overflow: hidden;
+}
+
+.menu-prix {
+  display: flex;
+}
+
+.prix {
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 900;
+}
+
+.margin0 {
+  margin: 0;
+}
+
+.coeur {
   font-size: 25px;
   position: absolute;
   right: 20px;
   top: 5px;
 }
-.menu1 .coeurPlein {
-  font-size: 25px;
-  position: absolute;
-  right: 20px;
-  top: 5px;
-  color: transparent;
-  background-image: linear-gradient(0deg, #9356dc, #FF79DA);
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-  transition: all 400ms;
-}
-.menu1:hover .coeurPlein {
-  opacity: 1;
-  background-image: linear-gradient(0deg, #9456DC, #FF79DB);
+.coeur:hover {
+  font-weight: 900;
+  background: linear-gradient(360deg, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-duration: 800ms;
 }
 
 .footerSize {
@@ -346,29 +391,35 @@ a {
   color: white;
   display: flex;
   gap: 10px;
-  padding-left: 10px;
+  height: 114px;
+  padding-left: 0;
   height: 186px;
-  line-height: 1.5;
 }
-.footerSize h2 {
-  font-family: "Manrope", sans-serif;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Roboto", sans-serif;
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
+.footerSize .contactFooter {
+  text-decoration: none;
+  color: white;
+}
+.footerSize .reverse {
+  padding: 22px 25px;
+}
+@media (min-width: 1203px) {
+  .footerSize .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
 }
 .footerSize .footerInf {
   flex-direction: column;
-  margin-left: 0;
-  margin-top: 15px;
   gap: 7px;
   align-items: normal;
-  padding-left: 10px;
+  line-height: 1.5;
 }
 @media (min-width: 1203px) {
   .footerSize .footerInf {
-    margin-top: 40px;
+    margin-top: 0;
     gap: 15px;
     margin-left: auto;
     display: flex;
@@ -376,6 +427,11 @@ a {
     align-items: center;
     position: relative;
     margin-right: 120px;
+  }
+}
+@media (min-width: 1203px) {
+  .footerSize .reverse {
+    flex-direction: row-reverse;
   }
 }
 .footerSize .marge {
@@ -386,9 +442,9 @@ a {
   width: 137px;
   height: 27px;
   filter: invert(100%);
-  margin-top: 22px;
-  margin-bottom: 10px;
   margin-left: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 @media (min-width: 1203px) {
   .footerSize .footer_image {

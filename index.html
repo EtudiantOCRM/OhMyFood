@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@100;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/3c6fd09c86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +45,7 @@
 
     <section class="Fonct">
         <div class="container">
-        <h2>Fonctionnement</h2>
+        <h2 class="title-h2">Fonctionnement</h2>
         <ol>
             <li><span class="numeration">1</span><i class="fas fa-mobile-screen-button color-icon"></i>Choisissez un restaurant</li>
             <li><span class="numeration">2</span><i class="fas fa-list-ul color-icon"></i>Composez votre menu</li>
@@ -54,7 +56,7 @@
     <!-- section Restaurant -->
     <section class="menus">
         <div class="container">
-    <h2>Restaurant</h2>
+    <h2 class="title-h2">Restaurant</h2>
         <div class="menus_cards">      
     <a href="page1.html" class="card">
         <img class="card_image " src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="menu-1">
@@ -67,9 +69,9 @@
         </div>
 
         <div class="card_description-heart">
-        <i class="coeurVide fa-regular fa-heart "></i>
-        <i class="coeurPlein fa-solid fa-heart "></i>
+        <i class="coeur fa-regular fa-heart "></i>
         </div>
+
     </div>
     </a>
     <a href="#" class="card">
@@ -81,9 +83,10 @@
         <h3 class="card_description-menuNom">La note enchantée</h3>  
         <p class="card_description-ville">Charonne</p> 
         </div>
+
         <div class="card_description-heart">
-        <i class="coeurVide fa-regular fa-heart "></i>
-        <i class="coeurPlein fa-solid fa-heart "></i>
+        <i class="coeur fa-regular fa-heart "></i>
+        
         </div>
      </div>
     </a>
@@ -97,8 +100,8 @@
         </div>
 
         <div class="card_description-heart">
-        <i class="coeurVide fa-regular fa-heart "></i>
-        <i class="coeurPlein fa-solid fa-heart "></i> 
+        <i class="coeur fa-regular fa-heart "></i>
+        
         </div> 
 
      </div>
@@ -113,8 +116,8 @@
         </div>
 
         <div class="card_description-heart">
-        <i class="coeurVide fa-regular fa-heart"></i>
-        <i class="coeurPlein fa-solid fa-heart"></i> 
+        <i class="coeur fa-regular fa-heart"></i>
+        
         </div>  
         
         
@@ -127,22 +130,25 @@
 <!-- Footer -->
 
 <footer class="footerSize">
-    <div class="footerInf">
-    <img class="footer_image" src="images/logo/ohmyfood.png" alt="logo-footer">
-    <p>
-        <i class="fas fa-utensils"></i>
-        Proposer un restaurant
-    </p>
-    <p>
-        <i class="fas fa-hands-helping"></i>
-        Devenir partenaire
-    </p>
-    <p class="marge">
-        Mentions légales
-    </p>
-    <p>
-       <a href="mailto:restaurant.ohmyfood@gmail.com" >Contact</a>
-    </p>
+    <div class=" reverse">
+        <img class="footer_image" src="images/logo/ohmyfood.png" alt="logo-footer">
+        <div class="footerInf">
+            <div>
+                <i class="fas fa-utensils"></i>
+                Proposer un restaurant
+            </div>
+            <div>
+                <i class="fas fa-hands-helping"></i>
+                Devenir partenaire
+            </div>
+            <div class="marge">
+                Mentions légales
+            </div>
+            <div>
+                <a class="contactFooter" href="mailto:restaurant.ohmyfood@gmail.com">Contact</a>
+            </div>
+        </div>
+        
    
     </div>
 </footer>
