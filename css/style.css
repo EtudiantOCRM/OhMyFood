@@ -320,7 +320,7 @@ body {
 }
 
 .menu1 {
-  font-family: "Shrikhand", "sans-serif";
+  font-family: "Shrikhand", sans-serif;
   padding-left: 10px;
 }
 
@@ -337,7 +337,7 @@ body {
 
 .Plats-groupe {
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-right: 20px;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -345,15 +345,23 @@ body {
 .menu-items {
   margin: 10px;
 }
-.menu-items .menu-items_check {
+.menu-items:hover .menu-items_check {
   background-color: #99E2D0;
+  margin: -32px -11px -11px 5px;
+  width: 57px;
   display: flex;
-  margin-left: 5px;
   align-items: center;
-  width: 53px;
+  justify-content: center;
+  border-radius: 0 15px 15px 0;
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
 }
-.menu-items .menu-items_check hover {
-  overflow: hidden;
+.menu-items:hover .menu-items_check .sizeCheck {
+  font-size: 25px;
+  color: white;
+}
+.menu-items_check {
+  display: none;
 }
 
 .menu-prix {
@@ -369,6 +377,10 @@ body {
 
 .margin0 {
   margin: 0;
+}
+
+.majuscule {
+  text-transform: uppercase;
 }
 
 .coeur {

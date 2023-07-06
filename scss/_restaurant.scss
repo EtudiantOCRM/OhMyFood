@@ -19,14 +19,14 @@ object-fit:cover;
 
 }
 .menu1{
-    font-family: "Shrikhand","sans-serif";
+    font-family: "Shrikhand",sans-serif;
     padding-left: 10px;
     
 }
 .sectionMunus{
     position: relative;
 }
-// section des differents plats
+// section des differents Entrées
 .Plats{
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@ object-fit:cover;
 }
 .Plats-groupe{
     background-color: #FFFF;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-right: 20px;
     box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
 }
@@ -43,19 +43,29 @@ object-fit:cover;
     // line-height: 5px;
     margin:10px;
     
-        
-            .menu-items_check{
-                background-color:#99E2D0;
-                display: flex;
-                margin-left: 5px;
-                // position:relative;  
-                // margin-top: -80 px;
-                 align-items:center;
-                //  justify-content: center;
-                width:53px;   
-                & hover{
-                    overflow: hidden;
-                }
+    
+    &:hover .menu-items_check{ 
+     
+        background-color:#99E2D0;
+        margin: -32px -11px -11px 5px;
+        width: 57px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 0 15px 15px 0;
+            transition-duration: 0.5s;
+
+          transform: rotate(180deg);
+        .sizeCheck{
+            font-size: 25px;
+            color: white;
+            // transition-duration: 0.5s;
+            // transform: rotate(180deg); 
+        }
+        }
+            &_check{
+                display:none;
+                  
     }
     
 }
@@ -78,6 +88,19 @@ display:flex;
     //     transition-duration: 0.5s;
     //  }
     
+    // .sizeCheck{
+    //     font-size: 25px;
+    //     color: white;
+// &:hover{
+//          transition-duration: 0.5s;
+//          transform: rotate(180deg);
+//     }
+    // }
+.majuscule{
+    text-transform:uppercase;
+}
+
+
 
 .coeur{
     font-size: 25px;
