@@ -344,6 +344,8 @@ body {
 
 .menu-items {
   margin: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-items:hover .menu-items_check {
   background-color: #99E2D0;
@@ -353,12 +355,12 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 0 15px 15px 0;
-  transition-duration: 0.5s;
-  transform: rotate(180deg);
 }
 .menu-items:hover .menu-items_check .sizeCheck {
   font-size: 25px;
   color: white;
+  transition: margin-right 0.5s;
+  transform: rotate(180deg);
 }
 .menu-items_check {
   display: none;
@@ -377,10 +379,31 @@ body {
 
 .margin0 {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .majuscule {
   text-transform: uppercase;
+  position: relative;
+}
+.majuscule::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 0;
+  height: 3px;
+  width: 30px;
+  background-color: #99E2D0;
+}
+
+.btnPage1 {
+  width: 186px;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .coeur {
