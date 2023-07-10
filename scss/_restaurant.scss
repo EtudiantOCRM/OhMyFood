@@ -41,34 +41,58 @@ object-fit:cover;
     box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
 }
 .menu-items{
+    overflow:hidden;
     // line-height: 5px;
-    margin:10px;
+    padding:10px;
     white-space: nowrap;
     text-overflow:ellipsis;
-    
+    position:relative;
+    transition:all 1s;
+    &:hover{
+        transition :all 1s;
+    padding-right:57px;
+    }
+
     &:hover .menu-items_check{ 
+        
      
         background-color:#99E2D0;
-        margin: -32px -11px -11px 5px;
+       
         width: 57px;
         display:flex;
         align-items:center;
         justify-content:center;
         border-radius: 0 15px 15px 0;
-            // transition:margin-right 0.5s;
-            // transform: rotate(180deg);
+           
         .sizeCheck{
+        display:block;
             font-size: 25px;
             color: white;
-            transition:margin-right 0.5s;
-            transform: rotate(180deg);
+          animation: rotate 1s ease-in-out;
+            
         }
-        }
-            &_check{
-                display:none;
-                  
+    }
+    &_check{
+                display:flex;
+                width:0px;
+                position:absolute;
+                top:0;
+                right:0;
+                bottom:0;
+                transition: all 1s;
+                .sizeCheck{
+                    display:none;
+                }
     }
     
+}
+@keyframes rotate{
+    0%{
+        transform:rotate(-270deg);
+      }
+    100%{
+        transform: rotate(0);
+}
 }
 
 .menu-prix{

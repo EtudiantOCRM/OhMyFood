@@ -343,13 +343,19 @@ body {
 }
 
 .menu-items {
-  margin: 10px;
+  overflow: hidden;
+  padding: 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
+  position: relative;
+  transition: all 1s;
+}
+.menu-items:hover {
+  transition: all 1s;
+  padding-right: 57px;
 }
 .menu-items:hover .menu-items_check {
   background-color: #99E2D0;
-  margin: -32px -11px -11px 5px;
   width: 57px;
   display: flex;
   align-items: center;
@@ -357,15 +363,32 @@ body {
   border-radius: 0 15px 15px 0;
 }
 .menu-items:hover .menu-items_check .sizeCheck {
+  display: block;
   font-size: 25px;
   color: white;
-  transition: margin-right 0.5s;
-  transform: rotate(180deg);
+  animation: rotate 1s ease-in-out;
 }
 .menu-items_check {
+  display: flex;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 1s;
+}
+.menu-items_check .sizeCheck {
   display: none;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 .menu-prix {
   display: flex;
 }
