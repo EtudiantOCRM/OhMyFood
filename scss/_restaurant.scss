@@ -23,15 +23,23 @@ object-fit:cover;
 
 .menu{
     margin-top: -40px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 35px 35px 0 0;
     background-color: #f6f6f6;
     position: relative;
-
+    @media all and (min-width: 1000px) and (max-width: 2500px){
+        max-width: 1240px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
 }
 .menu1{
     font-family: "Shrikhand",sans-serif;
     padding-left: 10px;
+    @media all and (min-width: 1000px) and (max-width: 2500px){
+        display:flex;
+        justify-content:center;
+    }
     
 }
 .sectionMunus{
@@ -43,7 +51,7 @@ object-fit:cover;
     flex-direction: column;
     margin-left: 10px;
     gap: 10px;
-    @media all and (min-width: 1000px) and (max-width: 2000px){
+    @media all and (min-width: 1000px) and (max-width: 2500px){
         width:1000px;
         margin:auto;
         }
@@ -54,7 +62,7 @@ object-fit:cover;
     margin-right: 20px;
     box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
     cursor:pointer;
-    @media all and (min-width: 1000px) and (max-width: 2000px){
+    @media all and (min-width: 1000px) and (max-width: 2500px){
         width:635px;
         margin:auto;
         }
@@ -156,7 +164,8 @@ display:flex;
 .majuscule{
     text-transform:uppercase;
     position:relative;
-    @media all and (min-width: 1000px) and (max-width: 2000px){
+    @media all and (min-width: 1000px) and (max-width: 2500px){
+
         width: 635px;
         margin:auto;
         }
@@ -183,15 +192,38 @@ display:flex;
     font-size: 25px;
     position: absolute;
     right: 20px;
+    background: transparent;
+    @media all and (min-width: 1000px) and (max-width: 2500px){
+        right:325px;
+    }
     top:5px;
-    cursor: pointer;
+    
+    font-weight:200;
+    transition: all 1s ease-in-out linear;
+    // transition-duration: 1s;
+    // margin-top:6px;
+    
     &:hover{
         font-weight:900;
         background:linear-gradient(360deg,#ff79da,#9356dc);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transition-duration:800ms;
+        
+        transition: all 1s ease-in-out linear;
+        // transition-duration: 1s;
+    }
+}
+@keyframes coeur{
+                
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
     }
 }
 // Footer
