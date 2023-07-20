@@ -36,6 +36,8 @@ object-fit:cover;
 .menu1{
     font-family: "Shrikhand",sans-serif;
     padding-left: 10px;
+    display:flex;
+    justify-content:center;
     @media all and (min-width: 1000px) and (max-width: 2500px){
         display:flex;
         justify-content:center;
@@ -66,16 +68,19 @@ object-fit:cover;
         width:635px;
         margin:auto;
         }
-        @keyframes appear{
-            0%{
-                transform:scale(0)
-            }
-            100%{
-                transform:scale(1)
-            }
-        }
-             animation: appear 1s;
+        
+        animation: appear 1s;
+          
 }
+@keyframes appear{
+    0%{
+        transform:scale(0)
+    }
+    100%{
+        transform:scale(1)
+    }
+}
+
 .menu-items{
     overflow:hidden;
     padding:10px;
@@ -89,7 +94,6 @@ object-fit:cover;
         padding-right:57px;
         }
 
-
     &:hover .menu-items_check{ 
         background-color:#99E2D0;
         width: 57px;
@@ -97,12 +101,14 @@ object-fit:cover;
         align-items:center;
         justify-content:center;
         border-radius: 0 15px 15px 0;
+        
            
         .sizeCheck{
             display:block;
             font-size: 25px;
             color: white;
-            animation: rotate 1s ease-in-out;
+            // animation: rotate 1s ease-in-out;
+            transition: all 1s;
             
             }
         }
@@ -114,8 +120,10 @@ object-fit:cover;
                 right:0;
                 bottom:0;
                 transition: all 1s;
+                
                 .sizeCheck{
                     display:none;
+                    
             }
         }
     
@@ -129,17 +137,13 @@ object-fit:cover;
         transform:rotate(0);
         }
     }
-// a faire en boucle
-@for $i from 0 to 8 {
+// a faire en boucle pour faire apparaitre progressivemt les boutons pour les menus
+@for $i from 0 to 10 {
     .delay-#{$i} {
         animation-delay: ($i *.1s);
 
     }
-        
-    
-
 }
-
 
 .menu-prix{
 display:flex;
@@ -168,6 +172,7 @@ display:flex;
 
         width: 635px;
         margin:auto;
+        margin-bottom: 15px;
         }
     &::after{
         content:"";
@@ -179,6 +184,9 @@ display:flex;
         background-color: #99E2D0;
         }
 }
+// .margeTop{
+//     margin-top: 15px;
+// }
 .btnPage1{
     width:186px;
     text-align: center;
@@ -187,45 +195,51 @@ display:flex;
     margin-bottom: 40px;
 }
 
-
-.coeur{
-    font-size: 25px;
-    position: absolute;
-    right: 20px;
-    background: transparent;
-    @media all and (min-width: 1000px) and (max-width: 2500px){
-        right:325px;
-    }
-    top:5px;
+// .coeurRestaurant{
+//     font-size: 25px;
+//     // position: absolute;
+//     right: 30px;
+//     background: transparent;
+//     position:absolute;
+//     margin:auto;
+//     @media all and (min-width: 1000px) and (max-width: 2500px){
+//         right:325px;
+//         // position:absolute;
+//         margin:auto;
+//     }
+//     top:5px;
+//     font-weight:200;
+//     transition: all 1s ease-in-out linear;
+//     // transition-duration: 1s;
+//     // margin-top:6px;
     
-    font-weight:200;
-    transition: all 1s ease-in-out linear;
-    // transition-duration: 1s;
-    // margin-top:6px;
-    
-    &:hover{
-        font-weight:900;
-        background:linear-gradient(360deg,#ff79da,#9356dc);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+//     &:hover{
+//         font-weight:900;
+//         background:linear-gradient(360deg,#ff79da,#9356dc);
+//         background-clip: text;
+//         -moz-background-clip:text;
+//         -moz-text-fill-color:transparent;
+//         -webkit-background-clip:text;
+//         -webkit-text-fill-color:transparent;
         
-        transition: all 1s ease-in-out linear;
-        // transition-duration: 1s;
-    }
-}
-@keyframes coeur{
+//         transition: all 1s ease-in-out linear;
+//         // transition-duration: 1s;
+//     }
+// }
+// @keyframes coeur{
                 
-    0%{
-        opacity:1;
-    }
-    50%{
-        opacity: 0;
-    }
-    100%{
-        opacity:1;
-    }
-}
+//     0%{
+//         opacity:1;
+//     }
+//     50%{
+//         opacity: 0;
+//     }
+//     100%{
+//         opacity:1;
+//     }
+// }
+
+
 // Footer
 
 .footerSize{

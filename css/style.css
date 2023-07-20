@@ -61,6 +61,10 @@ body {
 }
 
 .btn-violet-grad {
+  min-width: 186px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-weight: 500;
   font-size: 18px;
@@ -143,6 +147,41 @@ body {
   color: inherit;
 }
 
+.coeur {
+  font-size: 25px;
+  right: 20px;
+  background: transparent;
+  top: 5px;
+  font-weight: 200;
+  transition: all 1s ease-in-out linear;
+}
+@media all and (min-width: 1000px) and (max-width: 2500px) {
+  .coeur {
+    right: 325px;
+  }
+}
+.coeur:hover {
+  font-weight: 900;
+  background: linear-gradient(360deg, #ff79da, #9356dc);
+  background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 1s ease-in-out linear;
+}
+
+@keyframes coeur {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .menus {
   background-color: #f6f6f6;
   padding-left: 125px;
@@ -326,6 +365,8 @@ body {
 .menu1 {
   font-family: "Shrikhand", sans-serif;
   padding-left: 10px;
+  display: flex;
+  justify-content: center;
 }
 @media all and (min-width: 1000px) and (max-width: 2500px) {
   .menu1 {
@@ -365,6 +406,7 @@ body {
     margin: auto;
   }
 }
+
 @keyframes appear {
   0% {
     transform: scale(0);
@@ -373,7 +415,6 @@ body {
     transform: scale(1);
   }
 }
-
 .menu-items {
   overflow: hidden;
   padding: 10px;
@@ -398,7 +439,7 @@ body {
   display: block;
   font-size: 25px;
   color: white;
-  animation: rotate 1s ease-in-out;
+  transition: all 1s;
 }
 .menu-items_check {
   display: flex;
@@ -453,6 +494,14 @@ body {
   animation-delay: 0.7s;
 }
 
+.delay-8 {
+  animation-delay: 0.8s;
+}
+
+.delay-9 {
+  animation-delay: 0.9s;
+}
+
 .menu-prix {
   display: flex;
 }
@@ -484,6 +533,7 @@ body {
   .majuscule {
     width: 635px;
     margin: auto;
+    margin-bottom: 15px;
   }
 }
 .majuscule::after {
@@ -504,40 +554,6 @@ body {
   margin-bottom: 40px;
 }
 
-.coeur {
-  font-size: 25px;
-  position: absolute;
-  right: 20px;
-  background: transparent;
-  top: 5px;
-  font-weight: 200;
-  transition: all 1s ease-in-out linear;
-}
-@media all and (min-width: 1000px) and (max-width: 2500px) {
-  .coeur {
-    right: 325px;
-  }
-}
-.coeur:hover {
-  font-weight: 900;
-  background: linear-gradient(360deg, #ff79da, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 1s ease-in-out linear;
-}
-
-@keyframes coeur {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .footerSize {
   background-color: #353535;
   color: white;
