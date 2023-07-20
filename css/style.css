@@ -423,27 +423,12 @@ body {
   position: relative;
   transition: all 1s;
 }
-.menu-items:hover {
-  transition: all 1s;
-  padding-right: 57px;
-}
-.menu-items:hover .menu-items_check {
-  background-color: #99E2D0;
-  width: 57px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0 15px 15px 0;
-}
-.menu-items:hover .menu-items_check .sizeCheck {
-  display: block;
-  font-size: 25px;
-  color: white;
-  transition: all 1s;
-}
 .menu-items_check {
   display: flex;
   width: 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
   position: absolute;
   top: 0;
   right: 0;
@@ -451,17 +436,25 @@ body {
   transition: all 1s;
 }
 .menu-items_check .sizeCheck {
-  display: none;
+  display: block;
+  font-size: 25px;
+  color: white;
+  transform: rotate(0deg);
+  transition: transform 1s;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
+hover {
+  transition: all 1s;
+  padding-right: 57px;
 }
+hover .menu-items_check {
+  width: 57px;
+}
+hover .menu-items_check .sizeCheck {
+  transform: rotate(720deg);
+  transition: transform 1s;
+}
+
 .delay-0 {
   animation-delay: 0s;
 }

@@ -89,54 +89,71 @@ object-fit:cover;
     position:relative;
     transition:all 1s;
 
-    &:hover{
-        transition :all 1s;
-        padding-right:57px;
-        }
-
-    &:hover .menu-items_check{ 
-        background-color:#99E2D0;
-        width: 57px;
+    &_check{
         display:flex;
-        align-items:center;
-        justify-content:center;
-        border-radius: 0 15px 15px 0;
+        width:0px;
+        align-items: center;
+        justify-content: center;
+        background-color: #99E2D0;
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        transition: all 1s;
         
-           
         .sizeCheck{
             display:block;
             font-size: 25px;
             color: white;
             // animation: rotate 1s ease-in-out;
-            transition: all 1s;
+            transform:rotate(0deg);
+            transition:transform 1s;
+            // transition: all 1s;
             
             }
-        }
-    &_check{
-                display:flex;
-                width:0px;
-                position:absolute;
-                top:0;
-                right:0;
-                bottom:0;
-                transition: all 1s;
-                
-                .sizeCheck{
-                    display:none;
-                    
-            }
-        }
-    
 }
-@keyframes rotate{
-    0%{
-        transform:rotate(-270deg);
-        }
-    
-    100%{
-        transform:rotate(0);
+
+    // &:hover{
+    //     transition :all 1s;
+    //     padding-right:57px;
+    //     }
+
+    // &:hover .menu-items_check{ 
+    //     background-color:#99E2D0;
+    //     width: 57px;
+    //     display:flex;
+    //     align-items:center;
+    //     justify-content:center;
+    //     border-radius: 0 15px 15px 0;
+
+    //     }
+
+}
+hover{
+        transition :all 1s;
+        padding-right:57px;
+
+        .menu-items_check{
+            width: 57px;
+
+        
+        .sizeCheck{
+            transform: rotate(720deg);
+            transition:transform 1s;
+
+                    }
         }
     }
+
+// @keyframes rotate{
+//     0%{
+//         transform:rotate(-270deg);
+//         }
+    
+//     100%{
+//         transform:rotate(0);
+//         }
+//     }
 // a faire en boucle pour faire apparaitre progressivemt les boutons pour les menus
 @for $i from 0 to 10 {
     .delay-#{$i} {
