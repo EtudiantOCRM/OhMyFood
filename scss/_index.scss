@@ -70,10 +70,7 @@ font-family:"roboto", sans-serif;
 .btn-violet-grad{
 
     min-width: 186px;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-
+    text-align: center;
     color:white;
     font-weight: 500;
     font-size: 18px;
@@ -83,9 +80,11 @@ font-family:"roboto", sans-serif;
     // box-shadow: 0px 4px 10px 0px #00000040;
     @include btn-shadow;
     margin-top: 18px;
+    margin-bottom: 40px;
     transition-duration: 0.25s;
     cursor:pointer;
     background-image:linear-gradient(0deg,#9356dc,#FF79DA) ;
+    
 }
 .btn-violet-grad:hover{
     transform: scale(1.1);
@@ -235,6 +234,7 @@ font-family:"roboto", sans-serif;
     height: 25px;
     top:10px;
     right:12px;
+    
     &:hover{
         opacity:0;
         
