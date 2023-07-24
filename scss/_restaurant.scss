@@ -21,18 +21,23 @@ height:275px;
 object-fit:cover;
 }
 
+.coeurRestaurant{
+    right:45px;
+    @media (min-width: 1000px){
+    right:335px;
+    }
+}
 .menu{
     margin-top: -40px;
     border-radius: 35px 35px 0 0;
-    background-color: #f6f6f6;
+    background-color: #F6F6F6;
     position: relative;
     @media all and (min-width: 1000px) and (max-width: 2500px){
         max-width: 1240px;
         margin-right: auto;
         margin-left: auto;
     }
-
-}
+}   
 .menu1{
     font-family: "Shrikhand",sans-serif;
     // padding-left: 10px;
@@ -64,9 +69,10 @@ object-fit:cover;
     flex-direction: column;
     gap: 12px;
     justify-content: center;
+    padding-bottom: 25px;
 }
 .Plats-groupe{
-    background-color: #FFFF;
+    background-color: #FFFFFF;
     border-radius: 15px;
     margin-right: 20px;
     box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
@@ -132,15 +138,7 @@ object-fit:cover;
         }
     }
 
-    // &:hover .menu-items_check{ 
-    //     background-color:#99E2D0;
-    //     width: 57px;
-    //     display:flex;
-    //     align-items:center;
-    //     justify-content:center;
-    //     border-radius: 0 15px 15px 0;
-
-    //     }
+   
 
 }
 hover{
@@ -159,16 +157,7 @@ hover{
         }
     }
 
-// @keyframes rotate{
-//     0%{
-//         transform:rotate(-270deg);
-//         }
-    
-//     100%{
-//         transform:rotate(0);
-//         }
-//     }
-// a faire en boucle pour faire apparaitre progressivemt les boutons pour les menus
+
 @for $i from 0 to 10 {
     .delay-#{$i} {
         animation-delay: ($i *.1s);
@@ -218,11 +207,11 @@ display:flex;
 // .margeTop{
 //     margin-top: 15px;
 // }
-.btnPage1{
+.btnRestaurant{
     width:186px;
     text-align: center;
     margin:auto;
-    margin-top:40px;
+    // margin-top:40px;
     margin-bottom: 40px;
 }
 

@@ -15,6 +15,52 @@ flex-direction: column;
 font-family:"roboto", sans-serif;
 
 }
+.loader{
+    $animation-duration:1s;
+    $animation-count:3;
+    position:fixed;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    // top:0;
+    // bottom:0;
+    // left:0;
+    // right:0;
+    inset:0;
+    z-index:1;
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    animation: disappear 200ms;
+    animation-delay: $animation-duration*$animation-count;
+    // l'ecran ne réapparait pas
+    animation-fill-mode:forwards;
+    transform-origin:top;
+    &::after{
+        content: "";
+        height: 100px;
+        width: 100px;
+        // border:5px solid #9356DC;
+        border-right:5px solid transparent;
+        border-top: 5px solid #FF79DA;
+        border-radius:50%;
+        animation: spin $animation-duration ease-in-out;
+        animation-iteration-count: $animation-count;
+    }
+}
+@keyframes disappear{
+
+to{
+    transform:scale(0);
+}
+}
+@keyframes spin{
+to{
+    transform: rotate(360deg);
+}
+}
+
+
+
 .container{
     max-width:1300px;
     margin:auto;
@@ -34,6 +80,9 @@ font-family:"roboto", sans-serif;
     gap: 17px;
     background-color: #eaeaea;
     height: 50px;
+}
+.sizePlace{
+    font-weight: 400;
 }
 .Logo{
      text-align: center;
@@ -83,13 +132,13 @@ font-family:"roboto", sans-serif;
     margin-bottom: 40px;
     transition-duration: 0.25s;
     cursor:pointer;
-    background-image:linear-gradient(0deg,#9356dc,#FF79DA) ;
+    background-image:linear-gradient(0deg,#9356DC,#FF79DA) ;
     
 }
 .btn-violet-grad:hover{
     transform: scale(1.1);
     opacity:0.9;
-    box-shadow: 0px 4px 10px 0px #000000f7;
+    box-shadow: 0px 4px 10px 0px #000000F7;
 }
 // section fonctionnement
 .Fonct{
@@ -114,7 +163,7 @@ font-family:"roboto", sans-serif;
           
     }
     & li{
-        background-color: #f6f6f6;
+        background-color: #F6F6F6;
         padding:20px 20px;
         flex-grow: 1;
         border-radius:15px;
@@ -127,7 +176,7 @@ font-family:"roboto", sans-serif;
             transform: scale(1.02);
         }
         & .color-icon{
-            color: #7e7e7e;
+            color: #7E7E7E;
             margin-right:20px;
         }
     & .numeration{
@@ -145,6 +194,7 @@ font-family:"roboto", sans-serif;
 }
 
 // Section Restaurant
+
 .title-h2{
     padding:30px 0 ;
     margin:0;
@@ -158,71 +208,10 @@ font-family:"roboto", sans-serif;
     text-decoration:none;
     color:inherit;
 }
-// .coeur{
-//     font-size: 25px;
-   
-//     right: 20px;
-//     background: transparent;
-    
-//     @media all and (min-width: 1000px) and (max-width: 2500px){
-//         right:325px;
-        
-//     }
-//     top:5px;
-//     font-weight:200;
-//     transition: all 1s ease-in-out linear;
-//     // transition-duration: 1s;
-//     // margin-top:6px;
-    
-//     &:hover{
-//         font-weight:900;
-//         background:linear-gradient(360deg,#ff79da,#9356dc);
-//         background-clip: text;
-//         -moz-background-clip:text;
-//         -moz-text-fill-color:transparent;
-//         -webkit-background-clip:text;
-//         -webkit-text-fill-color:transparent;
-        
-//         transition: all 1s ease-in-out linear;
-//         // transition-duration: 1s;
-//     }
-// }
 
-// @keyframes coeur{
-                
-//     0%{
-//         opacity:1;
-//     }
-//     50%{
-//         opacity: 0;
-//     }
-//     100%{
-//         opacity:1;
-//     }
-// // }
-// coeur plein
-.heart-position2{
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    // transform: translate(0, -50%);
-    opacity: 0;
-    z-index: 2;
-    background:linear-gradient(360deg,#ff79da,#9356dc);
-    background-clip: text;
-    -webkit-background-clip:text;
-    color:transparent;
-    transition:all;
-    font-size:25px;
-    width: 25px;
-    height: 25px;
-    transition: all 0.3s linear 0s;
-    &:hover{
-        opacity:1;
-        transition: all 0.3s linear 0s;
-    }
-}
+
 // coeur vide
+
 .heart-position1{
     opacity: 1;
     position: absolute;
@@ -232,7 +221,7 @@ font-family:"roboto", sans-serif;
     font-size: 25px;
     width: 25px;
     height: 25px;
-    top:10px;
+    top:7px;
     right:12px;
     
     &:hover{
@@ -242,9 +231,36 @@ font-family:"roboto", sans-serif;
 
 }
 
+// coeur plein
+
+.heart-position2{
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    // transform: translate(0, -50%);
+    opacity: 0;
+    z-index: 2;
+    background:linear-gradient(360deg,#FF79DA,#9356DC);
+    background-clip: text;
+    -webkit-background-clip:text;
+    color:transparent;
+    transition:all;
+    font-size:25px;
+    width: 25px;
+    height: 25px;
+    transition: all 0.3s linear 0s;
+    
+    &:hover{
+        opacity:1;
+        transition: all 0.3s linear 0s;
+    }
+}
+
+
+
 .menus{
     
-    background-color: #f6f6f6;
+    background-color: #F6F6F6;
     @include marge-section;
     margin-top:50px;
     height:800px;
