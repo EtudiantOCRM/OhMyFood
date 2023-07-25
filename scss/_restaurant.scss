@@ -113,6 +113,7 @@ object-fit:cover;
         right:0;
         bottom:0;
         transition: all 1s;
+        border-radius:0 15px 15px 0;
         
         .sizeCheck{
             display:block;
@@ -132,8 +133,9 @@ object-fit:cover;
         .menu-items_check{
             width: 57px;
             .sizeCheck{
-                transform: rotate(720deg);
+                transform: rotate(-360deg);
                 transition: transform 1s;
+
             }
         }
     }
@@ -141,21 +143,7 @@ object-fit:cover;
    
 
 }
-hover{
-        transition :all 1s;
-        padding-right:57px;
 
-        .menu-items_check{
-            width: 57px;
-
-        
-        .sizeCheck{
-            transform: rotate(720deg);
-            transition:transform 1s;
-
-                    }
-        }
-    }
 
 
 @for $i from 0 to 10 {
@@ -175,7 +163,7 @@ display:flex;
     font-weight: 900;
     padding-right: 5px;
 }
-.margin0{
+.marginNull{
     margin:0;
     white-space:nowrap;
     text-overflow:ellipsis;
@@ -215,49 +203,7 @@ display:flex;
     margin-bottom: 40px;
 }
 
-// .coeurRestaurant{
-//     font-size: 25px;
-//     // position: absolute;
-//     right: 30px;
-//     background: transparent;
-//     position:absolute;
-//     margin:auto;
-//     @media all and (min-width: 1000px) and (max-width: 2500px){
-//         right:325px;
-//         // position:absolute;
-//         margin:auto;
-//     }
-//     top:5px;
-//     font-weight:200;
-//     transition: all 1s ease-in-out linear;
-//     // transition-duration: 1s;
-//     // margin-top:6px;
-    
-//     &:hover{
-//         font-weight:900;
-//         background:linear-gradient(360deg,#ff79da,#9356dc);
-//         background-clip: text;
-//         -moz-background-clip:text;
-//         -moz-text-fill-color:transparent;
-//         -webkit-background-clip:text;
-//         -webkit-text-fill-color:transparent;
-        
-//         transition: all 1s ease-in-out linear;
-//         // transition-duration: 1s;
-//     }
-// }
-// @keyframes coeur{
-                
-//     0%{
-//         opacity:1;
-//     }
-//     50%{
-//         opacity: 0;
-//     }
-//     100%{
-//         opacity:1;
-//     }
-// }
+
 
 
 // Footer

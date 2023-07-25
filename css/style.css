@@ -16,7 +16,7 @@ body {
   place-items: center;
   height: 100%;
   inset: 0;
-  z-index: 1;
+  z-index: 100;
   background-color: #FFFFFF;
   opacity: 0.9;
   animation: disappear 200ms;
@@ -76,7 +76,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* section Explorer */
 .Explorer {
   text-align: center;
   background-color: #F6F6F6;
@@ -489,6 +488,7 @@ body {
   right: 0;
   bottom: 0;
   transition: all 1s;
+  border-radius: 0 15px 15px 0;
 }
 .menu-items_check .sizeCheck {
   display: block;
@@ -505,19 +505,7 @@ body {
   width: 57px;
 }
 .menu-items:hover .menu-items_check .sizeCheck {
-  transform: rotate(720deg);
-  transition: transform 1s;
-}
-
-hover {
-  transition: all 1s;
-  padding-right: 57px;
-}
-hover .menu-items_check {
-  width: 57px;
-}
-hover .menu-items_check .sizeCheck {
-  transform: rotate(720deg);
+  transform: rotate(-360deg);
   transition: transform 1s;
 }
 
@@ -573,7 +561,7 @@ hover .menu-items_check .sizeCheck {
   padding-right: 5px;
 }
 
-.margin0 {
+.marginNull {
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
