@@ -254,17 +254,17 @@ to{
     background-color: #F6F6F6;
     @include marge-section;
     margin-top:50px;
-    height:800px;
-    @media(max-width:1000px){
-        height: 1500px;
+    padding-bottom:66px;
+    
+        height: 100%;
         padding-left:25px;
         padding-right: 25px;
-    }
+    
       
 .menus_cards{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap:91px;
+    gap:18px;
     width:100%;
     @media(max-width:1000px){
     grid-template-columns: 1fr;
@@ -277,6 +277,7 @@ to{
         &_image{
             border-radius:15px 15px  0 0;
             background-size:cover;
+            height:174px;
             width: 100%;
             object-fit:cover;  
         } 

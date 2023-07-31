@@ -224,19 +224,15 @@ body {
   padding-left: 125px;
   padding-right: 150px;
   margin-top: 50px;
-  height: 800px;
-}
-@media (max-width: 1000px) {
-  .menus {
-    height: 1500px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+  padding-bottom: 66px;
+  height: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .menus .menus_cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 91px;
+  gap: 18px;
   width: 100%;
 }
 @media (max-width: 1000px) {
@@ -251,6 +247,7 @@ body {
 .menus .menus_cards .card_image {
   border-radius: 15px 15px 0 0;
   background-size: cover;
+  height: 174px;
   width: 100%;
   object-fit: cover;
 }
