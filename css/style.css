@@ -251,7 +251,6 @@ body {
 .menus .menus_cards .card_image {
   border-radius: 15px 15px 0 0;
   background-size: cover;
-  height: 100%;
   width: 100%;
   object-fit: cover;
 }
