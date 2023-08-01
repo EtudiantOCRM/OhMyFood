@@ -34,7 +34,7 @@ object-fit:cover;
     border-radius: 35px 35px 0 0;
     background-color: #F6F6F6;
     position: relative;
-    @media all and (min-width: 1000px) and (max-width: 2500px){
+    @media (min-width: 1000px){
         max-width: 1240px;
         margin-right: auto;
         margin-left: auto;
@@ -43,10 +43,10 @@ object-fit:cover;
 
 .menu1{
     font-family: "Shrikhand",sans-serif;
-    // padding-left: 10px;
+    
     display:flex;
     padding-left: 10px;
-    @media all and (min-width: 1000px) and (max-width: 2500px){
+    @media (min-width: 1000px){
         display:flex;
         justify-content:center;
     }
@@ -58,12 +58,13 @@ object-fit:cover;
 }
 
 // section des differents Entrées
+
 .Plats{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     gap: 10px;
-    @media all and (min-width: 1000px) and (max-width: 2500px){
+    @media(min-width: 1000px){
         width:1000px;
         margin:auto;
         }
@@ -182,12 +183,12 @@ display:flex;
 .majuscule{
     text-transform:uppercase;
     position:relative;
-    @media all and (min-width: 1000px) and (max-width: 2500px){
-
+    @media (min-width: 1000px){
         width: 635px;
         margin:auto;
         margin-bottom: 15px;
         }
+
     &::after{
         content:"";
         position: absolute;
@@ -203,7 +204,6 @@ display:flex;
     width:186px;
     text-align: center;
     margin:auto;
-    // margin-top:40px;
     margin-bottom: 40px;
 }
 

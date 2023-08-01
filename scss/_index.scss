@@ -105,7 +105,7 @@ to{
 
 .sizeTitle{
     font-size:24px;
-    @media all and (min-width: 1000px) and (max-width: 2000px){
+    @media (min-width: 1000px){
     font-size: 40px;
     }
 }
@@ -138,13 +138,10 @@ to{
 
 .Fonct{
     @include marge-section;
-    
-    
         padding-left:25px;
         padding-right: 25px;
     
     & ol{
-       
         list-style-type: none;
         display:flex;
         gap: 36px;
@@ -153,8 +150,7 @@ to{
             flex-direction: column;
             padding:0px;
             align-items: center;
-        }
-          
+        }    
     }
 
     & li{
@@ -266,7 +262,7 @@ to{
     grid-template-columns: 1fr 1fr;
     gap:18px;
     width:100%;
-    @media(max-width:1000px){
+    @media(max-width:1000px){  
     grid-template-columns: 1fr;
         }
         
