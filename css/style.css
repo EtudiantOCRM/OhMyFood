@@ -230,6 +230,8 @@ body {
 }
 .menus .menus_cards {
   grid-template-columns: 1fr;
+  display: grid;
+  gap: 18px;
 }
 @media (min-width: 1000px) {
   .menus .menus_cards {

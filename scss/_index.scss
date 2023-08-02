@@ -245,13 +245,17 @@ to{
     
       
     .menus_cards{
+        grid-template-columns: 1fr;
+        display:grid;
+        gap:18px;
+
         @media(min-width:1000px){ 
         display:grid;
         grid-template-columns: 1fr 1fr;
         gap:18px;
         width:100%;
         }
-        grid-template-columns: 1fr;
+        
         
         
     .card{
