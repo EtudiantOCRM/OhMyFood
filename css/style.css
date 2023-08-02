@@ -229,14 +229,14 @@ body {
   padding-right: 25px;
 }
 .menus .menus_cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  width: 100%;
+  grid-template-columns: 1fr;
 }
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
   .menus .menus_cards {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    width: 100%;
   }
 }
 .menus .menus_cards .card {

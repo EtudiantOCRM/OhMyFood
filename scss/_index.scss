@@ -245,13 +245,14 @@ to{
     
       
     .menus_cards{
+        @media(min-width:1000px){ 
         display:grid;
         grid-template-columns: 1fr 1fr;
         gap:18px;
         width:100%;
-        @media(max-width:1000px){  
-        grid-template-columns: 1fr;
         }
+        grid-template-columns: 1fr;
+        
         
     .card{
         height: 251px;
@@ -334,24 +335,24 @@ to{
         }
     }
 
-.footerInf{
-    text-decoration: none;
-    color:white;
-    flex-direction: column;
-    gap:7px; 
-    align-items: normal;
-    line-height: 1.5;
-    @media(min-width:1000px){
-    margin-top: 0;
-    gap:15px;
-    margin-left: auto;
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    position: relative;
-    margin-right: 120px;
-        }    
-    }
+    .footerInf{
+        text-decoration: none;
+        color:white;
+        flex-direction: column;
+        gap:7px; 
+        align-items: normal;
+        line-height: 1.5;
+        @media(min-width:1000px){
+        margin-top: 0;
+        gap:15px;
+        margin-left: auto;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        position: relative;
+        margin-right: 120px;
+            }    
+        }
 
     .reverse{
         @media(min-width:1000px){
